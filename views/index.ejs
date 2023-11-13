@@ -4,7 +4,6 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Handjet:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
@@ -13,10 +12,15 @@
     <nav class="navbar">
             <div class="header-name"><p><a href="/">Ishaan</a></p></div>
             <div class="right-nav">
-                <p class="tab"><a href="#skills">Skills</p>
-                <p class="tab"><a href="#works">Works</a></p>
-                <p class="tab"><a href="#toolset">Toolset</a></p>
-                <p class="tab"><a href="/contact">Contact Me</a></p>
+                <p class="tab"><a class="links" href="#skills">Skills</p>
+                <p class="tab"><a class="links" href="#works">Works</a></p>
+                <p class="tab"><a class="links" href="#toolset">Toolset</a></p>
+                <p class="tab"><a class="links" href="/contact">Contact Me</a></p>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
     </nav>
 
@@ -73,6 +77,6 @@
 <div id="works">
         <h1 class="inner-titles">Works as of <%= date %>-<%=month%>-<%=year%>:</h1>
 </div>
-
+<script src="scripts/script.js"></script>
 </body>
 </html>
