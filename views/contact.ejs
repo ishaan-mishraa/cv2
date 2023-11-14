@@ -3,25 +3,49 @@
 <head>
     <title>Contact</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Handjet:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="header-name"><p><a href="/">Ishaan</a></p></div>
-        <div class="right-nav">
-            <p class="tab"><a href="/#skills">Skills</p>
-            <p class="tab"><a href="/#works">Works</a></p>
-            <p class="tab"><a href="/#toolset">Toolset</a></p>
-            <p class="tab"><a href="/contact">Contact Me</a></p>
+        <div id="header-name"><p><a href="/">Ishaan</a></p></div>
+        <div class="nav-links">
+            <a class="links" href="/#skills">Skills</a>
+            <a class="links" href="/#works">Works</a>
+            <a class="links" href="/#toolset">Toolset</a>
+            <a class="links" href="/contact">Contact Me</a>
         </div>
-</nav>
-    
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="mailto:ishaancodes01@gmail.com" method="post" enctype="text/plain">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

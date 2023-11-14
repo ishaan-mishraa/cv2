@@ -8,29 +8,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Handjet:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
     <nav class="navbar">
-            <div class="header-name"><p><a href="/">Ishaan</a></p></div>
-            <div class="right-nav">
-                <p class="tab"><a class="links" href="#skills">Skills</p>
-                <p class="tab"><a class="links" href="#works">Works</a></p>
-                <p class="tab"><a class="links" href="#toolset">Toolset</a></p>
-                <p class="tab"><a class="links" href="/contact">Contact Me</a></p>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+        <div id="header-name"><p><a href="/">Ishaan</a></p></div>
+        <div class="nav-links">
+            <a class="links" href="#skills">Skills</a>
+            <a class="links" href="#works">Works</a>
+            <a class="links" href="#toolset">Toolset</a>
+            <a class="links" href="/contact">Contact Me</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
+
     <div class="intro-container">
-        <div class="intro-head">
-            <p>I am <span class="intro-name">Ishaan Mishra</span>.<br>  I am a Computer Science Sophomore at <span class="intro-name">KIIT University</span>, Bhubaneshwar, India.</p>
+        <div class="top-image">
+            <img src="assets/images/studying.png" alt="Studying" class="study-image">
         </div>
+        <div class="intro-head">
+           <p class="p1">I am <span class="intro-name">Ishaan Mishra</span>.<br>
+            I am a Computer Science Sophomore at <span class="intro-name">KIIT University</span>, Bhubaneshwar, India.</p>
+        </div>
+        
         <div class="intro-body">
-            <p>I am currently learning Web Developement and going to learn DS and Algo next due to my keen interest in Competitive coding And course syllabus ofcourse✌️.</p>
+            <p class="p2">I am currently learning Web Developement and going to learn DS and Algo next due to my keen interest in Competitive coding And course syllabus ofcourse✌️.</p>
         </div>
     </div>
     <hr class="intro-hr">
@@ -77,6 +84,7 @@
 <hr class="intro-hr">
 <div id="works">
         <h1 class="inner-titles">Works as of <%= date %>-<%=month%>-<%=year%>:</h1>
+        <div class="top-image"><img src="assets/images/keyboard-smash.png" alt="working" class="work-image"></div>
 </div>
 <script src="scripts/script.js"></script>
 </body>
