@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   const data = {
     date: new Date().getDate(),
-    month: new Date().getMonth(),
+    month: new Date().getMonth()+1,
     year: new Date().getFullYear()
   };
   res.render("index.ejs", data);
